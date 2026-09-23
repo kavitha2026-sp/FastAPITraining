@@ -1,0 +1,52 @@
+# ==============================================================================
+# FastAPI & Python Production .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+*.bak/
+
+# Environment Variables & Secrets (CRITICAL: Never commit your secrets!)
+.env
+.env.*
+!.env.example
+secrets.toml
+
+# Databases (Local SQLite files used during development)
+*.db
+*.sqlite3
+*.sqlite3-journal
+
+# Testing & Coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+.mypy_cache/
+.ruff_cache/
+
+# Logging
+*.log
+logs/
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+Thumbs.db
+
+# Code Editors & IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+.cursorignore
